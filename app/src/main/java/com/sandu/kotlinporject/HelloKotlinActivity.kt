@@ -6,7 +6,7 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_hello_kotlin.*
 
 /**
- * KotlinPorject
+ * HelloKotlin
  * @author lizewu
  * @date 2019/3/22
  */

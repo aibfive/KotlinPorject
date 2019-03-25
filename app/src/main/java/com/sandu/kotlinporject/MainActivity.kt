@@ -4,6 +4,7 @@ import android.content.Intent
 import kotlinx.android.synthetic.main.activity_main.*;
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
 
 /**
@@ -24,12 +25,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      */
     fun setOnClickListener(){
         helloKotlinTv.setOnClickListener(this)
-
+        variableTv.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
             helloKotlinTv.id -> openHelloKotlinActivity()
+            variableTv.id -> openVariableActivity()
+            else -> Log.i("GG", "else");
         }
     }
 
@@ -39,6 +42,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     fun openHelloKotlinActivity(){
         var intent = Intent()
         intent.setClass(this, HelloKotlinActivity::class.java)
+        startActivity(intent)
+    }
+
+    /**
+     * 打开Variable页面
+     */
+    fun openVariableActivity(){
+        var intent = Intent()
+        intent.setClass(this, VariableActivity::class.java)
         startActivity(intent)
     }
 

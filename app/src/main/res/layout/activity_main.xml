@@ -41,6 +41,17 @@
                 android:background="@android:color/white"
                 android:gravity="center"/>
 
+            <TextView
+                android:id="@+id/variableTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Variable"
+                android:textSize="17dp"
+                android:textColor="@color/color333333"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

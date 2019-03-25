@@ -22,7 +22,9 @@
         <activity
             android:name=".HelloKotlinActivity"
             android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".VariableActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

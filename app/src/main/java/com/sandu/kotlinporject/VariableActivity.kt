@@ -12,41 +12,33 @@ import kotlinx.android.synthetic.main.activity_variable.*
  * @author lizewu
  * @date 2019/3/25
  */
-class VariableActivity : AppCompatActivity(), View.OnClickListener{
+class VariableActivity : AppCompatActivity(), View.OnClickListener {
 
-   val valValue : String = "valValue"
-        /*get() {
-            return field
-        }*/
-        get() = field.toUpperCase()
 
-    var varValue : String = "varValue"
+
+
+    var varValue : String? = "var_value"
         get() {
-            Log.i("GG", "Get")
             return field
         }
-        set(value) = if(varValue.equals(varValue)){
-            Log.i("GG", "Set")
-            field = "hhhhh"
-        }else{
-            Log.i("GG", "Set")
-            field = "hhhhh"
-
+        set(value) {
+            field = value
         }
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_variable)
         backIv.setOnClickListener(this)
-
         contentTv.text = getContent()
+        varValue = null
+        Log.i("GG", "varValue-->"+varValue)
     }
 
     fun getContent() : String{
         var stringBuffer = StringBuffer()
-        stringBuffer.appendln("valValue-->"+valValue)
-        stringBuffer.appendln("varValue-->"+varValue)
+        stringBuffer.appendln(varValue)
         return stringBuffer.toString()
     }
 

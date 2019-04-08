@@ -26,12 +26,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     fun setOnClickListener(){
         helloKotlinTv.setOnClickListener(this)
         variableTv.setOnClickListener(this)
+        classTv.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
             helloKotlinTv.id -> openHelloKotlinActivity()
             variableTv.id -> openVariableActivity()
+            classTv.id -> openClassActivity()
             else -> Log.i("GG", "else");
         }
     }
@@ -52,6 +54,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var intent = Intent()
         intent.setClass(this, VariableActivity::class.java)
         startActivity(intent)
+    }
+
+    fun openClassActivity(){
+        var intent = Intent()
+        intent.setClass(this, ClassActivity::class.java)
+        startActivity(intent)
+
     }
 
 }

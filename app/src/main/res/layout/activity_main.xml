@@ -45,7 +45,18 @@
                 android:id="@+id/variableTv"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Variable"
+                android:text="Variable Kotlin"
+                android:textSize="17dp"
+                android:textColor="@color/color333333"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/classTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Class Kotlin"
                 android:textSize="17dp"
                 android:textColor="@color/color333333"
                 android:background="@android:color/white"

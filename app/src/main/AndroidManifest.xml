@@ -25,6 +25,9 @@
         <activity
             android:name=".VariableActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ClassActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -9,15 +9,5 @@ import android.util.Log
  */
 open class SuperClass{
 
-    constructor(name : String){
-        Log.i("GG", "SuperClass-->constructor(name : String)");
-    }
-
-    constructor(){
-        Log.i("GG", "SuperClass-->constructor()");
-    }
-
-    open fun superA(){
-
-    }
+ open var name : String = ""
 }

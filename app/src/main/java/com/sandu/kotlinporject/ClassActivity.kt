@@ -2,6 +2,7 @@ package com.sandu.kotlinporject
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_class.*
 
@@ -12,14 +13,16 @@ import kotlinx.android.synthetic.main.activity_class.*
  */
 class ClassActivity : AppCompatActivity(), View.OnClickListener {
 
+    val name : String
+        get() = "#"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
 
-        var derivedClass = DerivedClass("")
+        Log.i("GG", "name-->"+name)
 
-        derivedClass.superA()
     }
 
     fun setOnClickListener(){

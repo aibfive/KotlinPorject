@@ -3,12 +3,9 @@ package com.sandu.kotlinporject
 /**
  * KotlinPorject
  * @author lizewu
- * @date 2019/4/9
+ * @date 2019/4/10
  */
-public class ClassB : Any {
+class DerivedAbstractClass()  {
 
-    constructor(){
-
-    }
 
 }

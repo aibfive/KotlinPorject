@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
         setOnClickListener()
+
     }
 
     /**

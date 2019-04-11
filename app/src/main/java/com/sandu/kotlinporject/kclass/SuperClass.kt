@@ -1,4 +1,4 @@
-package com.sandu.kotlinporject
+package com.sandu.kotlinporject.kclass
 
 import android.util.Log
 
@@ -9,5 +9,10 @@ import android.util.Log
  */
 open class SuperClass{
 
- open var name : String = ""
+ final override fun hashCode(): Int {
+  return 2
+ }
+
+
+
 }

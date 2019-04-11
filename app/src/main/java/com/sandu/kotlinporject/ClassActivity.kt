@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
+import com.sandu.kotlinporject.kextend.ExtendClass
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -11,18 +12,16 @@ import kotlinx.android.synthetic.main.activity_class.*
  * @author lizewu
  * @date 2019/4/8
  */
-class ClassActivity : AppCompatActivity(), View.OnClickListener {
-
-    val name : String
-        get() = "#"
+open class ClassActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
 
-        Log.i("GG", "name-->"+name)
-
+        var extend = ExtendClass()
+        //Log.i("GG", "extend-->"+extend.leng)
+        extend.test()
     }
 
     fun setOnClickListener(){

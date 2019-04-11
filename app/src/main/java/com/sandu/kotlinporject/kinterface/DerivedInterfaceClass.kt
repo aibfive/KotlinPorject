@@ -1,4 +1,4 @@
-package com.sandu.kotlinporject
+package com.sandu.kotlinporject.kinterface
 
 /**
  * KotlinPorject
@@ -7,7 +7,4 @@ package com.sandu.kotlinporject
  */
 class DerivedInterfaceClass : SuperInterface {
 
-    override fun funA() {
-
-    }
 }

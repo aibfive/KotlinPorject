@@ -1,4 +1,4 @@
-package com.sandu.kotlinporject
+package com.sandu.kotlinporject.kabstract
 
 /**
  * KotlinPorject

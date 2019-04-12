@@ -9,9 +9,9 @@ import android.util.Log
  */
 open class SuperClass{
 
- final override fun hashCode(): Int {
-  return 2
- }
+  open fun funSuper(){
+
+  }
 
 
 

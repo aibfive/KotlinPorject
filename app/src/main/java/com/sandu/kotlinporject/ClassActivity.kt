@@ -2,9 +2,10 @@ package com.sandu.kotlinporject
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.View
-import com.sandu.kotlinporject.kextend.ExtendClass
+import com.sandu.kotlinporject.kextend.ClassA
+import com.sandu.kotlinporject.kextend.ClassB
+import com.sandu.kotlinporject.kextend.funExtend
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -19,9 +20,19 @@ open class ClassActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_class)
         setOnClickListener()
 
-        var extend = ExtendClass()
-        //Log.i("GG", "extend-->"+extend.leng)
-        extend.test()
+        performFun(ClassA())
+        performFun(ClassB())
+
+        performExtendFun(ClassA())
+        performExtendFun(ClassB())
+    }
+
+    fun performExtendFun(cls : ClassA){
+        cls.funExtend()
+    }
+
+    fun performFun(cls : ClassA){
+        cls.funA()
     }
 
     fun setOnClickListener(){

@@ -1,6 +1,13 @@
 package com.sandu.kotlinporject.kextend
 
-import android.util.Log
+
+fun String?.extendFun() : String?{
+    if(this == null){
+        return this
+    }else{
+        return "extend_null"
+    }
+}
 
 /**
  * 扩展类
@@ -9,32 +16,23 @@ import android.util.Log
  */
 class ExtendClass {
 
-    var leng : Int = "name".length()
+    fun performFun(){
+        "name".extendFun()
 
+        var nullStr : String? = null
 
-    var String?.name : String
-        get() {
-            return this.name
-        }
-        set(value) {
-            this.plus(value)
-            Log.i("GG", "name-->$value")
-        }
+        nullStr.extendFun()
 
+    }
 
-    fun String?.length() : Int{
+    fun String.subIndexOf(index : Int) : String{
+        toUpperCase()
         if(this == null){
-            return 0
-        }else {
-            return this.length
+            return this
+        }else{
+            return this.subIndexOf(index)
         }
     }
 
-    fun test(){
-
-        Log.i("GG", "proprietary-->"+null.name)
-        Log.i("GG", "proprietary-->"+"name".name)
-        null.name = "dss"
-    }
 
 }

@@ -7,5 +7,10 @@ package com.sandu.kotlinporject.kclass
  */
 class DerivedClass() : SuperClass() {
 
+    fun funDerived(){
+        funSuper()
+    }
+
+
 
 }

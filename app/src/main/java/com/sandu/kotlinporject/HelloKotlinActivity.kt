@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_hello_kotlin.*
-
+import com.sandu.kotlinporject.kextend.*;
 /**
  * HelloKotlin
  * @author lizewu

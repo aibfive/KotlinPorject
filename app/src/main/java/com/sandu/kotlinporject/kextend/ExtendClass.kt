@@ -1,5 +1,10 @@
 package com.sandu.kotlinporject.kextend
 
+import android.util.Log
+import android.view.View
+import android.widget.LinearLayout
+import android.widget.TextView
+
 
 fun String?.extendFun() : String?{
     if(this == null){
@@ -9,6 +14,28 @@ fun String?.extendFun() : String?{
     }
 }
 
+fun View?.setWidthAndHeight(width : Int, height : Int){
+    if(this == null){
+        return
+    }
+    var params = this.layoutParams
+    params.width = width
+    params.height = height
+    this.layoutParams = params
+}
+
+
+var View.leftMargin : Int
+    get() {
+        var params = this.layoutParams as LinearLayout.LayoutParams
+        return params.leftMargin
+    }
+    set(value) {
+        var params = this.layoutParams as LinearLayout.LayoutParams
+        params.leftMargin = value
+        this.layoutParams = params
+    }
+
 /**
  * 扩展类
  * @author lizewu
@@ -16,23 +43,12 @@ fun String?.extendFun() : String?{
  */
 class ExtendClass {
 
-    fun performFun(){
-        "name".extendFun()
-
-        var nullStr : String? = null
-
-        nullStr.extendFun()
-
+    fun String.funA(){
     }
 
-    fun String.subIndexOf(index : Int) : String{
-        toUpperCase()
-        if(this == null){
-            return this
-        }else{
-            return this.subIndexOf(index)
-        }
+    fun funExtend() : String{
+        "".funA()
+        return "originalFun"
     }
-
 
 }

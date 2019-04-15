@@ -3,9 +3,8 @@ package com.sandu.kotlinporject
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.sandu.kotlinporject.kextend.ClassA
-import com.sandu.kotlinporject.kextend.ClassB
-import com.sandu.kotlinporject.kextend.funExtend
+import com.sandu.kotlinporject.kextend.DerivedExtendClass
+import com.sandu.kotlinporject.kextend.leftMargin
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -13,26 +12,15 @@ import kotlinx.android.synthetic.main.activity_class.*
  * @author lizewu
  * @date 2019/4/8
  */
-open class ClassActivity : AppCompatActivity(), View.OnClickListener {
+class ClassActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
 
-        performFun(ClassA())
-        performFun(ClassB())
-
-        performExtendFun(ClassA())
-        performExtendFun(ClassB())
-    }
-
-    fun performExtendFun(cls : ClassA){
-        cls.funExtend()
-    }
-
-    fun performFun(cls : ClassA){
-        cls.funA()
+        var derivedExtendClass = DerivedExtendClass()
+        derivedExtendClass.performExtendFun()
     }
 
     fun setOnClickListener(){
@@ -41,7 +29,10 @@ open class ClassActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when(v.id){
-            backIv.id -> finish()
+            backIv.id -> {
+                contentTv.leftMargin = 100
+                //finish()
+            }
         }
     }
 

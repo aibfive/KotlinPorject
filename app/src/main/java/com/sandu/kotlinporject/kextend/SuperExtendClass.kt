@@ -2,20 +2,16 @@ package com.sandu.kotlinporject.kextend
 
 import android.util.Log
 
-fun ClassA.funExtend(){
-    Log.i("GG", "funExtend-->ClassA")
-}
-
 
 /**
  * KotlinPorject
  * @author lizewu
  * @date 2019/4/12
  */
-open class ClassA {
+open class SuperExtendClass {
 
-    open fun funA(){
-        Log.i("GG", "classA")
+    open fun String.extendFun(){
+        Log.i("GG", "SuperExtendClass-->extendFun")
     }
 
 }

@@ -10,9 +10,11 @@ import android.util.Log
 open class SuperClass{
 
   open fun funSuper(){
-
+    Log.i("GG", "SuperClass-->funSuper")
   }
 
-
+  open fun funSuper3(){
+      Log.i("GG", "SuperClass-->funSuper3")
+  }
 
 }

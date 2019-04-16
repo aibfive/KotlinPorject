@@ -13,8 +13,6 @@ class DerivedExtendClass() : SuperExtendClass(){
         Log.i("GG", "DerivedExtendClass-->extendFun")
     }
 
-    fun performExtendFun(){
-        "".extendFun()
-    }
+
 
 }

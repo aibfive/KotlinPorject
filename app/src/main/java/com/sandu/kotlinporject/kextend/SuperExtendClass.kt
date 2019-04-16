@@ -14,4 +14,8 @@ open class SuperExtendClass {
         Log.i("GG", "SuperExtendClass-->extendFun")
     }
 
+    fun call(){
+        "".extendFun()
+    }
+
 }

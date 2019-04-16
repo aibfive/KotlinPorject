@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
+import com.sandu.kotlinporject.kextend.extendFun
+
 
 /**
  * KotlinPorject
@@ -18,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
         setOnClickListener()
-
+        "".extendFun()
     }
 
     /**

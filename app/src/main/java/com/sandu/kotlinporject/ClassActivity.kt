@@ -25,6 +25,9 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
+
+        OuterClass().setInnerClass(object  : SuperExtendClass(){
+        })
     }
 
     fun setOnClickListener(){

@@ -8,13 +8,13 @@ import android.util.Log
  * @author lizewu
  * @date 2019/4/12
  */
-class SuperExtendClass {
+abstract class SuperExtendClass {
 
-    fun String.extendFun(){
+    open fun String.extendFun(){
         Log.i("GG", "SuperExtendClass-->extendFun")
     }
 
-    fun call(){
+    open fun call(){
         "".extendFun()
     }
 

@@ -8,9 +8,9 @@ import android.util.Log
  * @author lizewu
  * @date 2019/4/12
  */
-open class SuperExtendClass {
+class SuperExtendClass {
 
-    open fun String.extendFun(){
+    fun String.extendFun(){
         Log.i("GG", "SuperExtendClass-->extendFun")
     }
 

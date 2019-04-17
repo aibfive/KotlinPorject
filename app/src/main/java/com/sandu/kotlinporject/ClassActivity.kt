@@ -2,10 +2,16 @@ package com.sandu.kotlinporject
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
+import android.view.ViewGroup
+import com.sandu.kotlinporject.inner.OuterClass
+import com.sandu.kotlinporject.kabstract.SuperAbstractClass
 import com.sandu.kotlinporject.kdata.DataClass
 import com.sandu.kotlinporject.kdata.SuperDataClass
+import com.sandu.kotlinporject.kextend.SuperExtendClass
+import com.sandu.kotlinporject.kinterface.SuperInterface
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -19,12 +25,6 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
-        /*var data = DataClass("name", 100)
-        //data.superDataFun()
-        Log.i("GG", "component1-->"+data.component1())
-        Log.i("GG", "component2-->"+data.component2())*/
-        var user = UserDto("Hai", 123)
-        Log.i("GG", "component1-->"+user.toString())
     }
 
     fun setOnClickListener(){
@@ -32,11 +32,11 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-        when(v.id){
+        /*when(v.id){
             backIv.id -> {
                 finish()
             }
-        }
+        }*/
     }
 
 }

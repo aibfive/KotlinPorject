@@ -7,7 +7,7 @@ package com.sandu.kotlinporject.kabstract
  */
 abstract open class  SuperAbstractClass(){
 
-    final fun absF(){
+    fun absF(){
 
     }
 

@@ -8,8 +8,4 @@ package com.sandu.kotlinporject;
  */
 public class SecondOuter {
 
-    public void secondOut(){
-        new OuterClass.NestedClass().nested();
-    }
-
 }

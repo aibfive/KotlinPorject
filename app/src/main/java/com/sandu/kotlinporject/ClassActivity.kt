@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
+import com.sandu.kotlinporject.kabstract.DerivedAbstractClass
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -24,6 +25,8 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
+
+        DerivedAbstractClass.ObjA
 
         var x = object {
             var x : String = ""

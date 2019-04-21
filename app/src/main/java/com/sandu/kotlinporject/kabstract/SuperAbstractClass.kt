@@ -5,10 +5,8 @@ package com.sandu.kotlinporject.kabstract
  * @author lizewu
  * @date 2019/4/10
  */
-abstract open class  SuperAbstractClass(){
+abstract class  SuperAbstractClass(){
 
-    fun absF(){
-
-    }
+    abstract fun superAbstractFun()
 
 }

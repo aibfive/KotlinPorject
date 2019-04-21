@@ -9,4 +9,6 @@ import android.util.Log
  */
 interface SuperInterface {
 
+    fun superInterfaceFun()
+
 }

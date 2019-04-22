@@ -1,6 +1,5 @@
 package com.sandu.kotlinporject.kabstract
 
-import android.view.View
 import com.sandu.kotlinporject.kinterface.SuperInterface
 
 /**
@@ -10,12 +9,20 @@ import com.sandu.kotlinporject.kinterface.SuperInterface
  */
 class DerivedAbstractClass()  {
 
-    var doubleObjA : SuperInterface = object : SuperAbstractClass() , SuperInterface{
+    /*interface SuperInterface1{
+        fun superInterface1()
+    }
+
+    var doubleObjA : SuperAbstractClass = object : SuperAbstractClass() , SuperInterface, SuperInterface1{
         override fun superAbstractFun() {
 
         }
 
         override fun superInterfaceFun() {
+
+        }
+
+        override fun superInterface1() {
 
         }
     }
@@ -32,21 +39,51 @@ class DerivedAbstractClass()  {
 
     var obj = object : View.OnClickListener{
         override fun onClick(p0: View?) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
         }
     }
 
     object ObjA{
         fun objAFun(){
+        }
+    }*/
+
+    object doubleObjB : SuperAbstractClass() , SuperInterface {
+        override fun superAbstractFun() {
+
+        }
+
+        override fun superInterfaceFun() {
 
         }
     }
 
-    var ObjB = object{
-        fun objBFun(){
+    companion object {
+        fun companionObjectFun(){
 
         }
     }
 
+    /*companion object{
+        fun companionObjectFun(){
+
+        }
+    }*/
+
+    /*public var ObjA = object{
+        fun aaaaaaa(){
+
+        }
+    }
+
+    private var ObjB : Any = object{
+        fun bbbbbb(){
+
+        }
+    }*/
+
+    /*fun derivedAbstractFun(){
+        ObjB.bbbbbb()
+    }*/
 
 }

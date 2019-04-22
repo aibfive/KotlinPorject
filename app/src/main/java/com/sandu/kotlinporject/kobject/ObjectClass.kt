@@ -1,8 +1,6 @@
 package com.sandu.kotlinporject.kobject
 
 import android.util.Log
-import android.view.View
-import com.sandu.kotlinporject.ClassActivity
 
 /**
  * KotlinPorject

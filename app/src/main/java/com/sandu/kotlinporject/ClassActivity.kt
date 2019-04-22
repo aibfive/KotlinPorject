@@ -25,9 +25,6 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
-
-        DerivedAbstractClass.ObjA
-
         var x = object {
             var x : String = ""
         }
@@ -36,7 +33,8 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
             var x : String = ""
         })
 
-
+        DerivedAbstractClass.doubleObjB.superAbstractFun()
+        DerivedAbstractClass.companionObjectFun()
 
     }
 

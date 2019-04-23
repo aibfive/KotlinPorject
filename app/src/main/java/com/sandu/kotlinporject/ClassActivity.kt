@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import com.sandu.kotlinporject.kabstract.DerivedAbstractClass
+import com.sandu.kotlinporject.kentrust.EntrustClass
+import com.sandu.kotlinporject.kobject.*
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -18,31 +20,7 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
-
-        View(this).setOnClickListener(object : View.OnClickListener{
-            override fun onClick(v: View?) {
-
-            }
-        })
-
-        var x = object {
-            var x : String = ""
-        }
-
-        setFun(object {
-            var x : String = ""
-        })
-
-        DerivedAbstractClass.doubleObjB.superAbstractFun()
-        DerivedAbstractClass.companionObjectFun()
-
-    }
-
-    fun setFun(obj : Any){
-
-    }
-
-    companion object {
+        EntrustClass().perform()
 
     }
 

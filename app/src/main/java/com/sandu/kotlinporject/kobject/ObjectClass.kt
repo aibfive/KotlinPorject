@@ -7,10 +7,15 @@ import android.util.Log
  * @author lizewu
  * @date 2019/4/18
  */
-object ObjectClass {
+class ObjectClass {
 
-    fun objFun(){
-        Log.i("GG", "对象声明")
+    var outerObj = object {
+        fun outerObjectFun(){
+            Log.i("GG", "outerObjectFun")
+        }
     }
 
+    fun objFun(){
+
+    }
 }

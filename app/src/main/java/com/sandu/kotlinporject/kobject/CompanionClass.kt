@@ -9,16 +9,13 @@ import android.util.Log
  */
 class CompanionClass {
 
-    companion object {
-        fun companionFun(){
-            Log.i("GG", "伴生对象")
+    companion object{
+        @JvmStatic fun companionFun(){
+
         }
     }
 
 }
-typealias AliasCc = String
-
-
 
 
 

@@ -3,12 +3,10 @@ package com.sandu.kotlinporject.kentrust
 /**
  * KotlinPorject
  * @author lizewu
- * @date 2019/4/23
+ * @date 2019/4/24
  */
-interface Base {
+class PropertyClass {
 
-    val base : Int
-
-    fun print()
+    val name : String by Delegate()
 
 }

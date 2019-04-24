@@ -5,12 +5,12 @@ import android.util.Log
 /**
  * KotlinPorject
  * @author lizewu
- * @date 2019/4/23
+ * @date 2019/4/24
  */
-class Derived(b : Base) : Base by b{
+interface EntrustInterface {
 
-    override val base: Int
-        get() = 100
+    var age : Int
 
+    fun printFun()
 
 }

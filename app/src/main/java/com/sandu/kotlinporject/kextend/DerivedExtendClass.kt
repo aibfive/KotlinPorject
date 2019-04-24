@@ -11,6 +11,7 @@ class DerivedExtendClass() : SuperExtendClass(){
 
     override fun String.extendFun() {
         Log.i("GG", "DerivedExtendClass-->extendFun")
+
     }
 
 

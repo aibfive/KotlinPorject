@@ -1,11 +1,9 @@
 package com.sandu.kotlinporject
 
 import android.os.Bundle
-import android.support.annotation.IntegerRes
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
-import com.sandu.kotlinporject.kobject.AliasCc
 import kotlinx.android.synthetic.main.activity_variable.*
 
 /**

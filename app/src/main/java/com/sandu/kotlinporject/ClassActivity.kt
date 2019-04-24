@@ -2,11 +2,8 @@ package com.sandu.kotlinporject
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.View
-import com.sandu.kotlinporject.kabstract.DerivedAbstractClass
-import com.sandu.kotlinporject.kentrust.EntrustClass
-import com.sandu.kotlinporject.kobject.*
+import com.sandu.kotlinporject.kentrust.EntrustPreformClass
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -20,7 +17,7 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
-        EntrustClass().perform()
+        EntrustPreformClass().perform()
 
     }
 

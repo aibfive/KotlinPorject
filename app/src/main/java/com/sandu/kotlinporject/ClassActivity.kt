@@ -3,7 +3,7 @@ package com.sandu.kotlinporject
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.sandu.kotlinporject.kentrust.EntrustPreformClass
+import com.sandu.kotlinporject.kentrust.TestEntrustClass
 import kotlinx.android.synthetic.main.activity_class.*
 
 /**
@@ -17,7 +17,7 @@ class ClassActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class)
         setOnClickListener()
-        EntrustPreformClass().perform()
+
 
     }
 

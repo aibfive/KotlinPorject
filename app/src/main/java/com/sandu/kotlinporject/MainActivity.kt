@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
+import com.sandu.kotlinporject.kentrust.EntrustPropertyClass
+import com.sandu.kotlinporject.kentrust.TestEntrustClass
+import com.sandu.kotlinporject.kentrust.VarDelegateClass
 import com.sandu.kotlinporject.kextend.extendFun
 
 
@@ -20,7 +23,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
         setOnClickListener()
-        "".extendFun()
+        var entrustPropertyClass = EntrustPropertyClass(mapOf<String, Int>(
+                "map1" to 1,
+                "map2" to 2
+        ))
+        Log.i("GG", "map1-->"+entrustPropertyClass.map1)
+        Log.i("GG", "map2-->"+entrustPropertyClass.map2)
     }
 
     /**
@@ -63,7 +71,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var intent = Intent()
         intent.setClass(this, ClassActivity::class.java)
         startActivity(intent)
-
     }
 
 }

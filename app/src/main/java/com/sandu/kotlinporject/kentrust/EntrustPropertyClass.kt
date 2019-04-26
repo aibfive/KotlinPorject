@@ -44,4 +44,5 @@ class EntrustPropertyClass(var map : Map<String, Int>) {
     val map1 : Int by map
     val map2 : Int by map
 
+
 }
